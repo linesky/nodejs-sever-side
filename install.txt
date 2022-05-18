@@ -1,0 +1,35 @@
+*:on server side:
+*install nodejs
+sudo apt-get install nodejs
+sudo apt-get install ifconfig
+sudo apt-get install netcat
+*connect to network or internet
+*find the ip of server machine using
+ifconfig
+*if the machine is not connect to internet the address is 127.0.0.1
+*copy dateServer.js to server machine
+*run on command line
+nodejs dateServer.js
+*if you X11 windows gest program install
+*test it on same other windows terminal
+*using netcat
+netcat 127.0.0.1 8080
+*127.0.0.1 is the ip to test server working
+*if work is ok
+*press control d to terminate netcat end of file
+*test external ip on server machine
+ips=xxx.xxx.xxx.xxx
+ports=8080
+netcat $ips $ports
+*test if work
+*:on far client side:
+*install:
+sudo apt-get install ifconfig
+sudo apt-get install netcat
+*run on terminal windows
+ips=xxx.xxx.xxx.xxx
+ports=8080
+netcat $ips $ports
+*if the the internt connection is keep-live
+*you must press control d to kill connection
+*from client side
